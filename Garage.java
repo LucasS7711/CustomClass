@@ -2,23 +2,23 @@ public class Garage {
    
    
    // instance varibles
-   int horsepower;
-   int numSeats;
-   int year;
-   int LastMaintenanceYear;
-   double cost;
-   double weight;
-   double mileage;
-   boolean isManual;
-   boolean isGas;
-   String driveTrainType;
-   String carType;
-   String modList;
-   String name;
-   String color;
+   private int horsepower;
+   private int numSeats;
+   private int year;
+   private int LastMaintenanceYear;
+   private double cost;
+   private double weight;
+   private double mileage;
+   private boolean isManual;
+   private boolean isGas;
+   private String driveTrainType;
+   private String carType;
+   private String modList;
+   private String name;
+   private String color;
    
    //constructors
-   public static void Garage() {
+   public void Garage() {
       int horsepower = 215;
       int numSeats = 2;
       int year = 1989;
@@ -34,12 +34,28 @@ public class Garage {
       String name = "Na mx5 Miata";
       String color  = "Midnight Purple";
    }
+   public void Garage(String name, String carType, String driveTrainType, String color, String modList, boolean isManual, boolean isGas, double mileage, double weight, double cost, int horsepower, int numSeats, int year, int LastMaintenanceYear) {
+      this.horsepower = horsepower;
+      this.numSeats = numSeats;
+      this.year = year;
+      this.LastMaintenanceYear = LastMaintenanceYear;
+      this.cost = cost;
+      this.weight = weight;
+      this.mileage  = mileage;
+      this.isManual = isManual;
+      this.isGas = isGas;
+      this.driveTrainType = driveTrainType;
+      this.carType = carType;
+      this.modList = modList;
+      this.name = name;
+      this.color  = color;
+   }
    
    //methods
    
    // add mods allows you to add a mod to a list of mods
    public void addMod(String mod) {
-   
+      
    }
    
    // remove mod allows you to take a mod off the list
