@@ -18,6 +18,14 @@ public class Garage {
    private String color;
    
    //constructors
+   
+   // use this constructor to just add the car name, year, and mileage. This is to support the ability to add a stock car that you just baught, and edit and mod it later.
+   public Garage(String name, int year, double mileage) {
+      this.name = name;
+      this.year = year;
+      this.mileage = mileage;
+   }
+   
    public  Garage() {
       int horsepower = 215;
       int numSeats = 2;
@@ -34,6 +42,7 @@ public class Garage {
       String name = "Na mx5 Miata";
       String color  = "Midnight Purple";
    }
+   
    public Garage(String name, String carType, String driveTrainType, String color, String modList, boolean isManual, boolean isGas, double mileage, double weight, double cost, int horsepower, int numSeats, int year, int LastMaintenanceYear) {
       this.horsepower = horsepower;
       this.numSeats = numSeats;
